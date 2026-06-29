@@ -1,73 +1,61 @@
-# Content to fill in — Cosmic Consultancy
+# Fill in your real info — Cosmic Consultancy
 
-Fill in your real answers after each "➜". Leave blank anything you don't have yet
-(I'll hide those sections rather than fake them). Hand this back to me and I'll
-insert it all across the site.
+Type your real answer after each ➜, then save and hand this back to me.
+**Blank = I hide that section cleanly. I never invent data.**
 
 ---
 
-## 1. Company basics (used in every page footer + contact)
+## ✅ NEEDED TO LAUNCH  (just these to go live)
 
-- Registered legal name (e.g. "Cosmic Consultancy Services LLC")
-  ➜ 
-- Phone number
-  ➜ 
-- Office address (street, city, country — or "Remote / by appointment")
-  ➜ 
+- Legal name      ➜            (e.g. Cosmic Consultancy Services LLC)
+- Phone           ➜            (e.g. +1 555 123 4567)
+- Address         ➜            (street, city, country — or: Remote / by appointment)
+- Projects done   ➜            (a number, e.g. 120)
+- Industries      ➜            (a number, e.g. 8)
+- Your name+role  ➜            (e.g. Kibrom G. — Founder & Lead Consultant)
 
-## 2. Homepage stats (two numbers next to "50+ companies trusted us")
+## ⭐ ONE STRONG CASE STUDY  (your best proof — fill this one well)
 
-- Projects delivered (a number, e.g. 120)
-  ➜ 
-- Industries served (a number, e.g. 8)
-  ➜ 
+- Title    ➜
+- Metric   ➜            (e.g. 60% faster deployments)
+- Measures ➜            (what the metric measures, e.g. release cycle time)
+- Story    ➜            (2–3 sentences: the challenge → what you built across which services → the result)
 
-## 3. About page — team bios (one line each: name — role)
+---
 
-- Person 1 ➜ 
-- Person 2 ➜ 
-- Person 3 ➜ 
-- Person 4 ➜ 
-  (Add or remove lines as needed. If you're solo, just give one.)
+## ◻ OPTIONAL  (skip any — I'll hide what you leave blank)
 
-## 4. Case studies (your strongest proof — fill at least ONE well)
+### More team members (one line each: name — role)
+- Person 2 ➜
+- Person 3 ➜
+- Person 4 ➜
 
-FLAGSHIP (the best one):
-- Project title ➜ 
-- Headline metric (e.g. "60% faster deployments") ➜ 
-- What the metric measures (e.g. "release cycle time") ➜ 
-- Story (2–3 sentences: the challenge, what you built across which services, the result) 
-  ➜ 
-
+### More case studies
 CASE 2:
-- Title ➜ 
-- Metric ➜ 
-- Story ➜ 
+- Title  ➜
+- Metric ➜
+- Story  ➜
 
 CASE 3:
-- Title ➜ 
-- Metric ➜ 
-
-  - Story ➜ 
+- Title  ➜
+- Metric ➜
+- Story  ➜
 
 CASE 4:
-- Title ➜ 
-- Metric ➜ 
-- Story ➜ 
+- Title  ➜
+- Metric ➜
+- Story  ➜
 
-## 5. Industries served (confirm the real ones + an example client per sector if you have any)
-  ➜ 
+### Industries served (confirm the real ones + an example client per sector if any)
+  ➜
 
-## 6. Per-service proof (optional — one short proof point per service you want to highlight)
-For any of these, give: a one-line result + the "ideal client" for that service.
-Leave blank to skip.
-
-- Cloud Technologies ➜ 
-- IT Strategy & Consulting ➜ 
-- Cyber Security ➜ 
-- AI Integration ➜ 
-- Data Analytics & BI ➜ 
-- CRM Integration ➜ 
-- ERP Solutions ➜ 
-- App & Web Development ➜ 
-- Quality Assurance / Testing ➜ 
+### Per-service proof (one line each: a result + the ideal client for that service)
+- Cloud Technologies        ➜
+- IT Strategy & Consulting   ➜
+- Cyber Security             ➜
+- AI Integration            ➜
+- Data Analytics & BI        ➜
+- CRM Integration           ➜
+- ERP Solutions             ➜
+- App & Web Development       ➜
+- Quality Assurance / Testing ➜
