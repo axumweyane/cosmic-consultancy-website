@@ -1,0 +1,39 @@
+PROMPT FOR CLAUDE CODE — paste this whole thing, or tell Claude Code:
+"read INTEGRATE-IMAGES-PROMPT.txt and do everything in it."
+============================================================
+
+You're in my Cosmic Consultancy static website folder
+(C:\Users\KB\Downloads\files !\ccs-site).
+
+I generated 5 AI images and downloaded them. They're probably in my Downloads
+folder (C:\Users\KB\Downloads) with generic names like "ChatGPT Image ....png".
+Find them, OPEN/VIEW each one, and match it to the correct slot by what it shows:
+
+  - A wide image of an orbiting glowing core with small nodes/icons around it
+        -> rename to  abstract-band.jpg   (homepage full-width band)
+  - An isometric cloud connected to buildings, phone, laptop, servers
+        -> rename to  case-1.jpg          (flagship / cloud case study)
+  - A network of glowing blue security SHIELDS connected by lines
+        -> rename to  case-2.jpg          (security case study)
+  - Floating glass CHARTS and graphs (bars, line, donut)
+        -> rename to  case-3.jpg          (analytics case study)
+  - TWO platforms connected by flowing lines with GEARS in the middle
+        -> rename to  case-4.jpg          (CRM / ERP case study)
+
+STEPS:
+1. Locate those 5 downloaded images, view them, and copy them into
+   assets/img/ with the exact names above.
+2. Compress/convert each to under 200 KB (Python + Pillow is installed).
+   Keep them sharp; JPG quality ~82 is fine.
+3. Read assets/styles.css first, then wire each image into its correct page
+   with descriptive alt text and CSS that matches the existing brand
+   (light-blue, rounded corners, responsive). Put new CSS in styles.css,
+   not inline.
+     - abstract-band.jpg -> a full-width band in index.html
+     - case-1..4.jpg      -> the matching case studies in case-studies.html
+4. If any team-*.jpg exist, wire them into the about.html team slots too.
+5. Verify the HTML still parses and every <img> path resolves.
+6. Commit with a clear message and push to the main branch on GitHub
+   (origin is already set to my repo). Help me sign in to GitHub if asked.
+
+If you can't confidently tell two images apart, ask me before guessing.

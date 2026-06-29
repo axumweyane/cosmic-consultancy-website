@@ -1,0 +1,28 @@
+PUT YOUR IMAGES IN THIS FOLDER  (ccs-site/assets/img/)
+
+Use these EXACT file names so I can wire them in automatically.
+Format: .jpg or .webp preferred. Keep each under ~200 KB.
+Skip any you don't have — I'll just hide that spot.
+
+TEAM PHOTOS (About page) — use REAL photos, not AI:
+  team-1.jpg
+  team-2.jpg
+  team-3.jpg
+  team-4.jpg
+
+CASE STUDY VISUALS (Case studies page) — AI images are fine here:
+  case-1.jpg        (flagship / biggest)
+  case-2.jpg
+  case-3.jpg
+  case-4.jpg
+
+HOMEPAGE ABSTRACT BAND (optional):
+  abstract-band.jpg
+
+INDUSTRY TILES (optional — only if you want images per sector):
+  industry-1.jpg
+  industry-2.jpg
+  industry-3.jpg
+  (...and tell me which sector each one is)
+
+That's it. Drop the files in, keep the names above, and tell me they're ready.
