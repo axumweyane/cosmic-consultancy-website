@@ -1,0 +1,22 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Node (only if you later add tooling)
+node_modules/
+npm-debug.log*
+
+# Local env / secrets — never commit keys
+.env
+.env.local
+
+# Build output (if you add a bundler later)
+dist/
+build/
