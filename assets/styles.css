@@ -378,6 +378,18 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.7);padding:60px 6vw 36
 
 @media(max-width:600px){.img-band{padding:50px 6vw}}
 
+/* ---------- USE CASES (service pages) ---------- */
+.use-cases{margin-top:38px}
+.use-cases .uc-sub{color:var(--grey);font-size:14px;margin:-4px 0 18px}
+.uc-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.uc{background:var(--off);border:1px solid var(--line);border-radius:16px;padding:22px;transition:border-color .3s,box-shadow .3s,transform .2s}
+.uc:hover{border-color:rgba(91,174,220,.5);box-shadow:0 18px 44px -22px rgba(91,174,220,.6);transform:translateY(-3px)}
+.uc .uc-t{font-family:'Sora';font-weight:500;font-size:15.5px;margin-bottom:9px;color:var(--charcoal);display:flex;align-items:center;gap:10px;line-height:1.25}
+.uc .uc-t::before{content:"";flex:0 0 auto;width:10px;height:10px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#DFF2FC,var(--blue) 60%,var(--blue-deep));box-shadow:0 0 10px rgba(168,216,240,.8)}
+.uc p{color:var(--grey);font-size:14px;line-height:1.6;margin:0}
+@media(max-width:600px){.uc-grid{grid-template-columns:1fr}}
+
 /* reveal */
 .reveal{opacity:0;transform:translateY(40px)}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}*{scroll-behavior:auto!important}}
