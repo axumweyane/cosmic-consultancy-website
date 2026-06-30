@@ -1,0 +1,96 @@
+# Cosmic Consultancy Services — static site (Apache / Hostinger)
+# Equivalent of the Cloudflare Pages _headers + _redirects, for Apache hosting.
+
+# Serve the static homepage (in case a WordPress index.php lingers)
+DirectoryIndex index.html index.php
+
+# ---------------------------------------------------------------------------
+# Security + caching headers
+# ---------------------------------------------------------------------------
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/png  "access plus 1 day"
+  ExpiresByType image/jpeg "access plus 1 day"
+  ExpiresByType image/svg+xml "access plus 1 day"
+  ExpiresByType text/css   "access plus 1 day"
+  ExpiresByType application/javascript "access plus 1 day"
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# Force www -> apex so URLs match the canonical tags
+# ---------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^www\.cosmicconsultancyservices\.com$ [NC]
+  RewriteRule ^(.*)$ https://cosmicconsultancyservices.com/$1 [R=301,L]
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# Legacy WordPress URLs -> new static pages (301). Anchored ^...$ with optional
+# trailing slash so /services/ matches but real /services/<name>.html does NOT.
+# ---------------------------------------------------------------------------
+<IfModule mod_alias.c>
+  # Cloud Technologies
+  RedirectMatch 301 ^/cloud-optimization/?$            /services/cloud.html
+  RedirectMatch 301 ^/cloud-migration/?$               /services/cloud.html
+  RedirectMatch 301 ^/cloud-management/?$              /services/cloud.html
+
+  # IT Strategy & Consulting
+  RedirectMatch 301 ^/it-roadmap-development/?$         /services/it-strategy.html
+  RedirectMatch 301 ^/technology-evaluation/?$          /services/it-strategy.html
+  RedirectMatch 301 ^/project-management/?$             /services/it-strategy.html
+  RedirectMatch 301 ^/digital-transformation/?$         /services/it-strategy.html
+  RedirectMatch 301 ^/it-governance/?$                  /services/it-strategy.html
+  RedirectMatch 301 ^/enterprise-architecture-copy/?$   /services/it-strategy.html
+  RedirectMatch 301 ^/enterprise-architecture-copyerr/?$ /services/it-strategy.html
+
+  # Cyber Security
+  RedirectMatch 301 ^/cyber-security/?$                 /services/cyber-security.html
+  RedirectMatch 301 ^/threat-detection-respose/?$       /services/cyber-security.html
+  RedirectMatch 301 ^/threat-detection-and-response/?$  /services/cyber-security.html
+  RedirectMatch 301 ^/security-assesment/?$             /services/cyber-security.html
+  RedirectMatch 301 ^/security-assessments/?$           /services/cyber-security.html
+  RedirectMatch 301 ^/compliance-and-risk-management/?$ /services/cyber-security.html
+
+  # CRM Integration
+  RedirectMatch 301 ^/crm/?$                            /services/crm-integration.html
+  RedirectMatch 301 ^/crm-devpt/?$                      /services/crm-integration.html
+  RedirectMatch 301 ^/crm-analyt/?$                     /services/crm-integration.html
+  RedirectMatch 301 ^/custom-crm-development/?$         /services/crm-integration.html
+  RedirectMatch 301 ^/crm-integration/?$               /services/crm-integration.html
+  RedirectMatch 301 ^/crm-integration2/?$              /services/crm-integration.html
+  RedirectMatch 301 ^/crm-analytics-and-reporting-tools/?$ /services/crm-integration.html
+
+  # App & Web Development
+  RedirectMatch 301 ^/front-end-development/?$          /services/app-web-development.html
+  RedirectMatch 301 ^/back-end-development-2/?$         /services/app-web-development.html
+  RedirectMatch 301 ^/full-stack-development/?$         /services/app-web-development.html
+
+  # Integration / architecture pages (no 1:1 page) -> services overview
+  RedirectMatch 301 ^/system-integration/?$            /services.html
+  RedirectMatch 301 ^/api-integration/?$               /services.html
+  RedirectMatch 301 ^/middleware-integration/?$        /services.html
+  RedirectMatch 301 ^/enterprise-service-bus-esb/?$    /services.html
+  RedirectMatch 301 ^/business-process-integration/?$  /services.html
+  RedirectMatch 301 ^/data-integration/?$              /services.html
+
+  # Top-level pages
+  RedirectMatch 301 ^/about-us/?$                       /about.html
+  RedirectMatch 301 ^/services/?$                       /services.html
+  RedirectMatch 301 ^/services-2/?$                     /services.html
+  RedirectMatch 301 ^/service-detail/?$                 /services.html
+  RedirectMatch 301 ^/contact/?$                        /contact.html
+  RedirectMatch 301 ^/contact-2/?$                      /contact.html
+  RedirectMatch 301 ^/industries/?$                     /industries.html
+  RedirectMatch 301 ^/case-study/?$                     /case-studies.html
+  RedirectMatch 301 ^/home-2/?$                         /
+
+  # Junk/template leftovers (ebooks, /category/*, /__trashed-*, blog) are left
+  # to 404 on purpose — no rules here.
+</IfModule>
