@@ -404,3 +404,6 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.7);padding:60px 6vw 36
   .page-hero{padding:130px 6vw 56px}
   .card,.step,.ind{padding:26px 22px}.form-card,.cal-card{padding:28px 22px}
 }
+
+.logo img{height:34px;width:auto;display:block}
+footer .logo img{height:32px}
