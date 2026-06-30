@@ -3,3 +3,77 @@
 
 # Force www -> apex so URLs match the canonical tags (https://cosmicconsultancyservices.com/...)
 https://www.cosmicconsultancyservices.com/* https://cosmicconsultancyservices.com/:splat 301!
+
+# ---------------------------------------------------------------------------
+# Legacy WordPress URLs -> new static pages (preserve search equity on cutover)
+# Sources are the trailing-slash paths as indexed in the old wp-sitemap.
+# NOTE: do not add a broad /services/* rule — real pages live at /services/<name>.html
+# ---------------------------------------------------------------------------
+
+# Cloud Technologies
+/cloud-optimization/            /services/cloud.html              301
+/cloud-migration/               /services/cloud.html              301
+/cloud-management/              /services/cloud.html              301
+
+# IT Strategy & Consulting
+/it-roadmap-development/         /services/it-strategy.html        301
+/technology-evaluation/          /services/it-strategy.html        301
+/project-management/             /services/it-strategy.html        301
+/digital-transformation/         /services/it-strategy.html        301
+/it-governance/                  /services/it-strategy.html        301
+/enterprise-architecture-copy/   /services/it-strategy.html        301
+/enterprise-architecture-copyerr/ /services/it-strategy.html       301
+
+# Cyber Security
+/cyber-security/                 /services/cyber-security.html     301
+/threat-detection-respose/       /services/cyber-security.html     301
+/threat-detection-and-response/  /services/cyber-security.html     301
+/security-assesment/             /services/cyber-security.html     301
+/security-assessments/           /services/cyber-security.html     301
+/compliance-and-risk-management/ /services/cyber-security.html     301
+
+# CRM Integration
+/crm/                            /services/crm-integration.html    301
+/crm-devpt/                      /services/crm-integration.html    301
+/crm-analyt/                     /services/crm-integration.html    301
+/custom-crm-development/         /services/crm-integration.html    301
+/crm-integration/               /services/crm-integration.html    301
+/crm-integration2/              /services/crm-integration.html    301
+/crm-analytics-and-reporting-tools/ /services/crm-integration.html 301
+
+# App & Web Development
+/front-end-development/          /services/app-web-development.html 301
+/back-end-development-2/         /services/app-web-development.html 301
+/full-stack-development/         /services/app-web-development.html 301
+
+# Integration / architecture pages (no 1:1 page yet) -> services overview
+/system-integration/            /services.html                    301
+/api-integration/               /services.html                    301
+/middleware-integration/        /services.html                    301
+/enterprise-service-bus-esb/    /services.html                    301
+/business-process-integration/  /services.html                    301
+/data-integration/              /services.html                    301
+
+# Top-level pages
+/about-us/                      /about.html                       301
+/services/                      /services.html                    301
+/services-2/                    /services.html                    301
+/service-detail/                /services.html                    301
+/contact/                       /contact.html                     301
+/contact-2/                     /contact.html                     301
+/industries/                    /industries.html                  301
+/case-study/                    /case-studies.html                301
+/home-2/                        /                                 301
+
+# Low-value template leftovers (blog/ebooks/book categories/trashed) -> home
+/blog/                          /                                 301
+/blog-landing-page-ebook-v1/    /                                 301
+/ebooks-for-entrepreneurs-fuel-your-business-success/    /        301
+/stay-informed-and-inspired-popular-non-fiction-ebooks/  /        301
+/escape-into-another-world-fantasy-and-sci-fi-ebook-picks/ /      301
+/top-10-must-read-ebooks-finding-for-personal-growth/    /        301
+/unlock-your-potential-with-these-inspiring-ebooks/      /        301
+/discover-the-hidden-gems-best-lesser-known-ebooks/      /        301
+/blblk/                         /                                 301
+/category/*                     /                                 301
+/__trashed-*                    /                                 301
