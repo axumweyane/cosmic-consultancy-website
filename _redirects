@@ -1,0 +1,5 @@
+# Cloudflare Pages — redirects
+# https://developers.cloudflare.com/pages/configuration/redirects/
+
+# Force www -> apex so URLs match the canonical tags (https://cosmicconsultancyservices.com/...)
+https://www.cosmicconsultancyservices.com/* https://cosmicconsultancyservices.com/:splat 301!
