@@ -20,3 +20,6 @@ npm-debug.log*
 # Build output (if you add a bundler later)
 dist/
 build/
+
+# Local-only alternate homepage draft — keep out of the repo
+index-cosmic.html
