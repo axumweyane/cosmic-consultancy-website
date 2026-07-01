@@ -25,9 +25,7 @@ a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 
 /* RTL for Tigrinya */
-html[dir="rtl"] body{font-family:'Noto Sans Ethiopic','Inter',sans-serif}
-html[dir="rtl"] .nav-links{flex-direction:row-reverse}
-html[dir="rtl"] .sec-head,html[dir="rtl"] .about-lead{text-align:right}
+html[lang="ti"] body{font-family:'Noto Sans Ethiopic','Inter',sans-serif}
 
 /* placeholder marker */
 .ph{color:var(--blue-deep);font-style:normal;background:rgba(168,216,240,.18);
@@ -48,7 +46,7 @@ nav.scrolled{background:rgba(255,255,255,0.85);backdrop-filter:blur(14px);
 .logo .mark::after{content:"";position:absolute;inset:-6px;border-radius:50%;
   border:1px solid rgba(91,174,220,.45);transform:rotate(-25deg) scaleY(.45);}
 .logo span.sub{color:var(--blue-deep);font-weight:400}
-.nav-links{display:flex;align-items:center;gap:24px;font-size:14px}
+.nav-links{display:flex;align-items:center;gap:24px;font-size:14px;margin-left:auto}
 .nav-links a{opacity:.75;transition:opacity .2s;position:relative}
 .nav-links a:hover,.nav-links a.active{opacity:1}
 .nav-links a.active::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--blue-deep);border-radius:2px}
@@ -60,7 +58,7 @@ nav.scrolled{background:rgba(255,255,255,0.85);backdrop-filter:blur(14px);
 .btn-ghost:hover{border-color:var(--blue-deep);color:var(--blue-deep)}
 
 /* language switcher */
-.lang{position:relative}
+.lang{position:relative;margin-left:22px}
 .lang-btn{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.6);border:1px solid var(--line);
   border-radius:999px;padding:7px 13px;font-size:13px;font-weight:500;cursor:pointer;color:var(--charcoal);transition:all .25s}
 .lang-btn:hover{border-color:var(--blue-deep)}
@@ -84,7 +82,9 @@ nav.scrolled{background:rgba(255,255,255,0.85);backdrop-filter:blur(14px);
     align-items:flex-start;justify-content:flex-start;padding:88px 32px 32px;gap:22px;font-size:16px;
     box-shadow:-20px 0 60px -20px rgba(26,26,31,.3);transform:translateX(100%);transition:transform .4s ease;z-index:110}
   .nav-links.open{transform:translateX(0)}
-  .mobile-toggle{display:flex;z-index:115}
+  .logo{margin-right:auto}
+  .lang{order:2;z-index:116;margin-left:0}
+  .mobile-toggle{display:flex;z-index:115;order:3;margin-left:14px}
   .mobile-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
   .mobile-toggle.open span:nth-child(2){opacity:0}
   .mobile-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}

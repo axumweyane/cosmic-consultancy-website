@@ -19,7 +19,7 @@
       if(dict[key] != null) el.setAttribute('placeholder', dict[key]);
     });
     document.documentElement.lang = lang;
-    document.documentElement.dir = (lang === 'ti') ? 'rtl' : 'ltr';
+    document.documentElement.dir = 'ltr'; // Tigrinya (Ge'ez script) is left-to-right
     localStorage.setItem('ccs_lang', lang);
     const cur = document.getElementById('lang-current');
     if(cur) cur.textContent = lang.toUpperCase();
