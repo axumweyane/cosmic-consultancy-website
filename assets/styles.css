@@ -24,7 +24,7 @@ h1,h2,h3,h4,.display{font-family:'Sora',sans-serif;font-weight:500;letter-spacin
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 
-/* RTL for Tigrinya */
+/* Tigrinya (Ge'ez script) — left-to-right, Ethiopic font */
 html[lang="ti"] body{font-family:'Noto Sans Ethiopic','Inter',sans-serif}
 
 /* placeholder marker */
